@@ -1,4 +1,4 @@
-<h1 style="text-align: center">Codecademy Dark Mode!</h1>
+<h1 style="text-align: center">Codecademy Dark Mode</h1>
 
 <h2>An unofficial skin for the Codecademy learning platform</h2>
 
