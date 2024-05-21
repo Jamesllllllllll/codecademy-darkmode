@@ -27,3 +27,8 @@ See the variables in the `:root` element.
 - [ ] Add more themes
 - [ ] Create a popup when the browser extension icon is clicked to choose a theme
 - [ ] Possibly add the ability to manually change colours
+
+
+## Licence
+
+MIT Licence - feel free to copy, modify & distribute.
