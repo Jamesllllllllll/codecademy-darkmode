@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Codecademy Dark Mode",
+  "version": "1.0.0",
+  "description": "A dark mode skin for the Codecademy learning platform",
+  "author": "James Keezer",
+  "content_scripts": [
+    {
+      "matches": ["*://*.codecademy.com/*"],
+      "exclude_matches": [
+        "*://discuss.codecademy.com/*",
+        "*://*.codecademy.com/resources/blog/*"
+      ],
+      "css": ["styles.css"]
+    }
+  ]
+}
