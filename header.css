@@ -1,0 +1,13 @@
+ul[role='menubar'] > div,
+li[aria-labelledby='Profile menu'],
+li[aria-labelledby='Catalog menu'],
+li[aria-labelledby='Community menu'],
+li[aria-labelledby='Resources menu'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+nav[aria-label='Main Navigation'],
+nav[aria-label='Mobile Navigation'] {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}

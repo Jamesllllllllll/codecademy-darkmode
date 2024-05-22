@@ -1,0 +1,19 @@
+/* what the.. */
+div
+  > div
+  + div
+  > div
+  > div
+  > svg
+  + div:has(> h2 + ul > li + li + li + li + li) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div:has(> div > h1#articles_title),
+div:has(> div > h1#articles_title) + div {
+  background-color: transparent !important;
+}
+
+ul.splide__list > li > div > a > div {
+  border-color: var(--color-text-light) !important;
+}

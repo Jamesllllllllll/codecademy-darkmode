@@ -1,0 +1,25 @@
+/* My Achievements page */
+
+div[class*='-GridBox']:has(> svg + div + span) {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[class*='-GridBox'] svg {
+  fill: var(--color-text-light) !important;
+}
+
+div[class*='-GridBox'] span {
+  color: var(--color-text-light) !important;
+}
+
+div[class*='-GridBox'] span:after {
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0),
+    var(--color-background-dark) 75%
+  ) !important;
+}
+
+div[class*='-FlexBox']:has(+ div[class*='-GridBox']) > svg + div {
+  background-color: var(--color-text-highlight) !important;
+}

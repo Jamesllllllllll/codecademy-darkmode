@@ -1,0 +1,39 @@
+/* Weekly progress popup */
+
+div[class*='ToastContainer'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[class*='ToastContainer'] * {
+  color: var(--color-text-light) !important;
+}
+
+/* weekly target letters that represent the days */
+div#target-week > div > div > div + div {
+  color: var(--color-text-dark) !important;
+}
+
+/* check marks, overrides the above */
+mask[id*='SmallCheckIcon'] + g > rect {
+  color: var(--color-text-light) !important;
+}
+
+div[aria-live='polite'] div#target-week mask[id*='SmallCheckIcon'] + g > rect {
+  color: var(--color-text-dark) !important;
+}
+
+div[role='dialog'] {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[role='dialog'] div:has(> li) {
+  background-color: var(--color-background-dark) !important;
+}
+
+span[role='tooltip'] + div > div + div > div {
+  color: var(--color-text-dark) !important;
+}
+
+div[class*='PopoverContainer'] button:hover {
+  color: var(--color-text-highlight) !important;
+}

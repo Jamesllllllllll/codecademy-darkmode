@@ -1,0 +1,107 @@
+div[data-testid='overlay-content-container'] {
+  background-color: #00000000 !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+div[data-testid='overlay-content-container'] h1 {
+  color: var(--color-text-light) !important;
+}
+
+div[data-testid='overlay-content-container'] button {
+  color: var(--color-text-light) !important;
+}
+
+div[data-testid='overlay-content-container'] button:hover {
+  color: var(--color-text-highlight) !important;
+}
+
+div[data-testid='overlay-content-container'] input {
+  color: var(--color-text-light) !important;
+  border: 1px solid var(--color-text-light) !important;
+}
+
+div[data-testid='overlay-content-container'] input::placeholder {
+  color: var(--color-text-light) !important;
+  filter: brightness(0.8);
+}
+
+div[data-testid='overlay-content-container'] div[aria-expanded='true'],
+div[data-testid='overlay-content-container'] div[aria-expanded='true'] ul {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[data-testid='overlay-content-container']
+  div[aria-expanded='true']
+  h2
+  > svg {
+  color: var(--color-text-light) !important;
+}
+
+/* "Not sure where to begin?" */
+div:has(+ div > a[href='/explore/sorting-quiz']) > div + div {
+  color: var(--color-text-light) !important;
+}
+
+/* SVG before "Not sure.." */
+div:has(+ div > a[href='/explore/sorting-quiz']) > div > svg > path {
+  fill: none !important;
+  stroke: var(--color-text-highlight) !important;
+}
+
+
+/* 'Explore All Courses' button in Catalog dropdown */
+
+a[data-focusablecatalog='true'][href='/catalog'] {
+  background-color: var(--color-text-highlight) !important;
+  color: var(--color-text-dark) !important;
+}
+
+a[data-focusablecatalog='true'][href='/catalog']:hover {
+  filter: brightness(1.2);
+}
+
+/* Notifications dropdown */
+
+div[aria-label='My Notifications'] h1,
+div[aria-label='My Notifications'] p {
+  color: var(--color-text-light) !important;
+}
+
+div[aria-label*='notifications'] h1 {
+  color: var(--color-text-light) !important;
+}
+
+div[aria-label*='notifications'] button {
+  color: var(--color-text-highlight) !important;
+  background-color: var(--color-background-dark) !important;
+}
+
+div[aria-label*='notifications'] button:hover {
+  filter: brightness(1.2);
+}
+
+span[id^='NotificationItem'],
+span[id^='NotificationItem'] + span {
+  color: var(--color-text-light) !important;
+}
+
+div[data-testid='empty-notification'] > div > svg > title + rect {
+  fill: var(--color-background-dark) !important;
+  stroke: var(--color-background-dark) !important;
+}
+
+div[data-testid='empty-notification'] > div > svg > title + rect path {
+  fill: var(--color-background-dark) !important;
+  stroke: var(--color-text-light) !important;
+}
+
+div[data-testid='empty-notification'] > div > svg circle,
+div[data-testid='empty-notification'] > div > svg line {
+  stroke: var(--color-text-light) !important;
+}
+
+/* mobile menu dropdown */
+
+div:has(> nav[aria-label='Mobile Navigation']) {
+  background-color: var(--color-background-dark) !important;
+}

@@ -1,0 +1,40 @@
+ul[aria-label='Services'] > li > div,
+ul[aria-label='Latest Courses'] > li > a > div,
+ul[aria-label='Latest Certificates'] > li > div,
+div:has(> span + div > span[data-testid='longest-weekly-streak']),
+div:has(> span + div > span[data-testid='current-weekly-streak']) {
+  background-color: var(--color-background-dark) !important;
+}
+
+div:has(ul[aria-label='Latest Certificates'])
+  + div
+  + div
+  > div
+  + div
+  > div
+  > div {
+  background-color: var(--color-background-dark) !important;
+}
+
+div:has(ul[aria-label='Latest Certificates'])
+  + div
+  + div
+  > div
+  + div
+  > div
+  > div
+  span {
+  color: var(--color-text-light) !important;
+}
+
+div:has(ul[aria-label='Latest Certificates'])
+  + div
+  + div
+  > div
+  + div
+  > div
+  > div
+  > div
+  > svg {
+  fill: var(--color-text-light) !important;
+}

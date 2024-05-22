@@ -1,0 +1,24 @@
+/* Career Center page */
+
+div:has(> div[id='Get inspired']),
+div:has(> div[id^='Get ready to get hired']),
+div:has(> div[id='Get job-ready']) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div:has(> div[id='New Feature']),
+div:has(> div[id='See how Codecademy Pro compares to coding bootcamps.']) {
+  background-color: var(--color-background-dark) !important;
+}
+
+div:has(> div[id='See how Codecademy Pro compares to coding bootcamps.']) a,
+div:has(> div[id='New Feature']) a {
+  color: var(--color-text-dark) !important;
+  background-color: var(--color-text-highlight) !important;
+}
+
+div:has(> div[id='See how Codecademy Pro compares to coding bootcamps.'])
+  a:hover,
+div:has(> div[id='New Feature']) a:hover {
+  filter: brightness(1.2);
+}

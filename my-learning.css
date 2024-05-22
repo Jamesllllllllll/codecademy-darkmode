@@ -1,0 +1,30 @@
+/* My Learning page */
+
+a[aria-label*='Active'] div div:has(svg) {
+  background-color: var(--color-background-dark) !important;
+}
+
+/* Pinned item svg */
+svg:has(mask[id*='MiniPinIcon']) {
+  color: var(--color-text-highlight) !important;
+}
+
+/* Completed check svg */
+a[aria-label*='Completed'] svg {
+  color: var(--color-text-dark) !important;
+}
+
+a[aria-label*='Completed'] div:has(> svg) {
+  background-color: var(--color-text-highlight) !important;
+}
+
+/* Resume button */
+
+div[data-testid='enrollment-card-body'] a + a {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+}
+
+div[data-testid='enrollment-card-body'] a + a:hover {
+  filter: brightness(1.2);
+}

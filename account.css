@@ -1,0 +1,32 @@
+/* Account page */
+
+nav[aria-label='Account Settings'] + main {
+  background-color: var(--color-background-dark) !important;
+}
+
+/* Goal settings */
+
+/* Mail settings */
+
+/* This should apply to all checkboxes */
+
+label[class*='CheckboxLabel'] > div > svg > path + polyline {
+  color: var(--color-text-dark) !important;
+}
+
+/* This should apply to all radio buttons... see if there are conflicts */
+
+label:before {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+/* Delete account */
+
+a[data-testid='delete-button'] {
+  color: var(--color-text-dark) !important;
+}
+
+a[data-testid='delete-button']:hover {
+  background-color: var(--color-text-highlight) !important;
+  filter: brightness(1.2);
+}

@@ -1,0 +1,29 @@
+/* Catalog page */
+
+a[aria-labelledby='sorting-quiz-banner-text'] {
+  background-color: var(--color-background-lessDark) !important;
+  text-decoration: none;
+}
+
+a[aria-labelledby='sorting-quiz-banner-text']:hover {
+  color: var(--color-text-light) !important;
+}
+
+a[aria-labelledby='sorting-quiz-banner-text'] span[aria-label='Take our quiz'] {
+  color: var(--color-text-light) !important;
+}
+
+a[aria-labelledby='sorting-quiz-banner-text']:hover
+  span[aria-label='Take our quiz'] {
+  color: var(--color-text-light) !important;
+  text-decoration: underline;
+}
+
+div[aria-label='subjects and languages'] > div > ul > li > div > a > div > div {
+  background-color: var(--color-background-dark) !important;
+}
+
+/* Single course page eg: /learn/learn-react... */
+div:has(> div > h2 + ul > li > a[href^='/courses']) {
+  background-color: transparent;
+}

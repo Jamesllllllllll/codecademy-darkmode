@@ -1,0 +1,160 @@
+/* tooltips - removed due to conflicts, fixed with revised global variables */
+/* div[class*='PopoverContainer'],
+div[class*='PopoverContainer'] * {
+  color: var(--color-text-dark) !important;
+} */
+
+/* term popup */
+
+div:has(> div > div > div > div[data-testid='popover-beak']) {
+  background-color: var(--color-background-dark) !important;
+  color: var(var(--color-text-light)) !important;
+}
+
+/* Next button */
+button#discovery-next:not([aria-disabled='true']):hover {
+  background-color: var(--color-text-highlight) !important;
+  filter: brightness(1.2);
+}
+
+/* Reset workspace "Reset" button -- could be flaky */
+div[data-testid='dialog-content'] + button + button {
+  background-color: var(--color-gradient-end) !important;
+}
+
+div[data-testid='dialog-content'] + button + button:hover {
+  filter: brightness(1.2);
+}
+
+div[data-testid='platform-page'] header {
+  background-color: var(--color-background-dark) !important;
+}
+
+code {
+  background-color: var(--color-background-lessDark) !important;
+  color: var(--color-text-light) !important;
+}
+
+/* section used here to keep it to lesson page only - accordionButton is reused elsewhere */
+section[aria-labelledby*='learning-component-']
+  div:has(> button[class*='accordionButton']) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+section[aria-labelledby*='learning-component-']
+  > h2
+  + div
+  > div
+  > div
+  + div
+  > div
+  > div,
+section[aria-labelledby*='learning-component-']
+  > h2
+  + div
+  > div
+  > div
+  > div
+  > div
+  > svg
+  + div {
+  color: var(--color-text-light) !important;
+}
+
+button[class*='accordionButton'] > span > div {
+  color: var(--color-text-light) !important;
+}
+
+div[class*='StyledAccordionBody'] > div {
+  background-color: var(--color-background-dark) !important;
+  color: var(--color-text-light) !important;
+}
+
+div[class*='TipBody'] {
+  color: var(--color-text-dark) !important;
+}
+
+button[data-testid='run-button'],
+button[data-testid='start-btn'] {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+}
+
+button[data-testid='run-button']:hover,
+button[data-testid='start-btn']:hover {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
+}
+
+button[data-testid='run-button']:hover {
+  filter: brightness(1.2);
+}
+
+/* checkpoints */
+
+div[data-testid='checkpoint-checkbox']:has(svg) {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+}
+
+/* Project steps */
+
+/* div[data-testid='narrative-content'] span:has(+ h2) {
+  color: var(--color-text-light) !important;
+} */
+
+/* solution diff modal */
+div[data-testid='solution-diff-modal'] button:has(+ button),
+div[data-testid='solution-diff-modal'] button:has(+ button):active {
+  border-color: var(--color-gradient-end) !important;
+  background-color: transparent !important;
+}
+
+div[data-testid='solution-diff-modal'] button + button {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+}
+
+div[data-testid='solution-diff-modal'] button + button:hover {
+  filter: brightness(1.2);
+  color: var(--color-text-dark) !important;
+}
+
+/* Tools overlay */
+
+div[data-testid='tools-menu-container'] button {
+  outline-color: var(--color-text-highlight) !important;
+}
+
+div[data-testid='tools-menu-container'] button[aria-checked='true'] {
+  background-color: var(--color-text-highlight) !important;
+  outline-color: var(--color-text-highlight) !important;
+}
+
+div[data-testid='share-code'] button {
+  color: var(--color-text-dark) !important;
+}
+
+div[data-testid='share-code'] button:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
+}
+
+/* Syllabus overlay */
+
+a[data-testid='syllabus-link'],
+a[data-testid='syllabus-link']:active {
+  border-color: var(--color-gradient-end) !important;
+  background-color: transparent;
+}
+
+section[aria-label='Syllabus Browser'] svg {
+  color: var(--color-gradient-end) !important;
+}
+
+/* error messages */
+
+div:has(> div[role='alert']) {
+  background-color: var(--color-background-dark) !important;
+}

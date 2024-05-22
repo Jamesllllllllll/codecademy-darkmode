@@ -1,0 +1,53 @@
+/* Projects & Workspaces pages */
+
+/* Left menu, desktop */
+div:has(> nav > div + div[data-testid='desktop-menu']) {
+  background: none !important;
+}
+
+div[data-testid='desktop-menu'] > div > button + div > div > div {
+  padding-left: 12px !important;
+}
+
+a[href^='/projects']:not([href='/projects']):not(
+    [href^='/projects/language']
+  ):not([href^='/projects/subject'])
+  > div,
+a[href^='/workspaces']:not([href='/workspaces']) {
+  background-color: var(--color-background-dark) !important;
+  border: 1px solid var(--color-text-light) !important;
+}
+
+a[href^='/projects'] > div > div + div > div + div > div > span {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+a[href^='/projects'] > div > div > span {
+  color: var(--color-text-light) !important;
+}
+
+a[href^='/projects'] > div > div + div > div > span {
+  color: var(--color-gray-600) !important;
+}
+
+div[data-testid='hero'] a {
+  color: var(--color-text-dark) !important;
+}
+
+div[data-testid='workspaces'] p {
+  color: var(--color-text-light) !important;
+}
+
+div[data-testid='file-navigator'],
+div[data-testid='file-navigator'] + div > div + div + div {
+  background-color: var(--color-background-dark) !important;
+}
+
+input[data-testid='sandbox-name-input'] {
+  background-color: var(--color-background-dark) !important;
+  border: none !important;
+}
+
+a[aria-label='my_directory'] {
+  border: none !important;
+}

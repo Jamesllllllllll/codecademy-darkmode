@@ -1,0 +1,38 @@
+/* Cheatsheets page */
+
+ul[data-testid='content-card-grid'] > li > a > div {
+  background-color: var(--color-background-dark) !important;
+  border-color: var(--color-text-light) !important;
+}
+
+ul[data-testid='content-card-grid'] > li > a > div > div + span:after {
+  background: linear-gradient(
+    to right,
+    hsla(0, 0%, 100%, 0),
+    var(--color-background-dark) 75%
+  );
+}
+
+/* Single cheatsheet page */
+
+section:has(> div > div.noGridPrint) {
+  background-color: var(--color-background-dark) !important;
+}
+
+nav:has(> div[aria-label='toggle-nav-menu']),
+ul#content-modules-list > li > div {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div[data-testid='bottom-section'] + section > h2 + div {
+  background: transparent !important;
+}
+
+div[data-testid='bottom-section'] + section > h2 + div > div > a > div {
+  border: 1px solid var(--color-text-light) !important;
+}
+
+div[data-testid='bottom-section'] + section > h2 + div > div > a > div > div {
+  background-color: var(--color-background-dark) !important;
+  border: none !important;
+}

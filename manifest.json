@@ -11,14 +11,26 @@
         "*://discuss.codecademy.com/*",
         "*://*.codecademy.com/resources/blog/*"
       ],
-      "css": ["styles.css"]
+      "css": [
+        "account.css",
+        "achievements.css",
+        "articles.css",
+        "careercenter.css",
+        "catalog.css",
+        "cheatsheets.css",
+        "dropdowns.css",
+        "enrolledcourses.css",
+        "forteams.css",
+        "globals.css",
+        "header.css",
+        "home.css",
+        "lessons.css",
+        "my-learning.css",
+        "popups.css",
+        "profile.css",
+        "projects-workspaces.css",
+        "quizzes.css"
+      ]
     }
-  ],
-  "browser_specific_settings": {
-  "gecko": {
-    "id": "addon@example.com",
-    "strict_min_version": "42.0"
-  }
-}
-
+  ]
 }

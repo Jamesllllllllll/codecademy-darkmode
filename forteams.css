@@ -1,0 +1,23 @@
+/* For Teams page */
+
+/* Table */
+
+div[data-testid='page-business-plans-gridt'] table tr:nth-of-type(2n) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div[data-testid='page-business-plans-gridt'] table tr:nth-of-type(2n + 1) {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[data-testid='page-business-plans-gridt'] td svg {
+  color: white;
+}
+
+div:has(> #Enterprise) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div[data-testid='Enterprise'] a {
+  color: var(--color-text-dark) !important;
+}

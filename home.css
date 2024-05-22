@@ -1,0 +1,83 @@
+div[data-testid='keep-learning-card'],
+div[aria-label="This week's goal progress"] {
+  background-color: var(--color-background-dark) !important;
+  color: var(--color-text-light) !important;
+  border-color: var(--color-border-light) !important;
+}
+
+div[data-testid='keep-learning-card'] > div {
+  border-color: var(--color-text-highlight) !important;
+}
+
+div[data-testid='keep-learning-card'] pattern[id*='DiagonalADense'] {
+  color: var(--color-gray-800) !important;
+}
+
+div[data-testid='progress-bar-bar'] {
+  color: var(--color-text-light) !important;
+  background-color: none !important;
+  background-image: linear-gradient(
+    249deg,
+    var(--color-gradient-start) 0%,
+    var(--color-gradient-end) 100%
+  );
+}
+
+/* resume button */
+
+div[data-testid='keep-learning-card'] > div + div + div > a + div + a {
+  background-color: var(--color-gradient-end) !important;
+  color: var(--color-text-dark) !important;
+}
+
+div[data-testid='keep-learning-card'] > div + div + div > a + div + a:hover {
+  filter: brightness(1.2);
+}
+
+/* target met card */
+h2 + div + div > div > div > div > div[class*='-Box'] {
+  background-color: var(--color-background-dark) !important;
+  border-color: var(--color-border-light) !important;
+}
+
+/* Curriculum card, under "Recommended for you" */
+
+a[data-testid='variant-curriculum-card'] > div > div > div > div > h3 {
+  font-size: 1.75rem !important;
+  color: var(--color-text-highlight) !important;
+}
+
+a[data-testid='variant-curriculum-card'],
+a[data-testid='variant-curriculum-card']::before {
+  border-color: var(--color-border-light) !important;
+}
+
+a[data-testid='variant-curriculum-card'] > div {
+  border-color: var(--color-border-light) !important;
+}
+
+a[data-testid='variant-curriculum-card'] > div > div + div {
+  border-color: var(--color-border-light) !important;
+  border-bottom-width: 5px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+a[data-testid='variant-curriculum-card']:hover > div {
+  box-shadow: var(--color-text-light) -8px 8px 0px !important;
+}
+
+a[data-testid='variant-curriculum-card'] > div > div {
+  background-color: var(--color-background-dark) !important;
+  color: var(--color-text-light) !important;
+}
+
+a[data-testid='variant-curriculum-card'] + div:hover {
+  box-shadow: var(--color-border-light) -8px 8px 0px !important;
+}
+
+/* Under "Discover more features" */
+
+ul > li > a > div[class*='DynamicCardWrapper'] {
+  border-color: var(--color-border-light) !important;
+}

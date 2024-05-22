@@ -1,0 +1,13 @@
+button[data-testid='quiz-button-cta']:hover {
+  background-color: var(--color-text-highlight) !important;
+  filter: brightness(1.2);
+}
+
+footer a[href^='/smart-practice'] {
+  color: var(--color-text-dark) !important;
+}
+
+footer a[href^='/smart-practice']:hover {
+  background-color: var(--color-text-highlight);
+  filter: brightness(1.2);
+}
