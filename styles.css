@@ -316,6 +316,13 @@ div[class*='PopoverContainer'] * {
   color: var(--color-text-dark) !important;
 }
 
+/* term popup */
+
+div:has(> div > div > div > div[data-testid='popover-beak']) {
+  background-color: var(--color-background-dark) !important;
+  color: var(var(--color-text-light)) !important;
+}
+
 /* Next button */
 button#discovery-next:hover {
   background-color: var(--color-text-highlight) !important;
@@ -430,13 +437,9 @@ mask[id*='SmallCheckIcon'] + g > rect {
   color: var(--color-text-light) !important;
 }
 
-/* 
-This incorrectly overrides the above...
-
-div#target-week rect {
+div[aria-live='polite'] div#target-week mask[id*='SmallCheckIcon'] + g > rect {
   color: var(--color-text-dark) !important;
 }
- */
 
 /* error messages */
 
@@ -918,7 +921,8 @@ div:has(> div[id='New Feature']) a:hover {
 
 /* Events page */
 
-a[href^='https://community.codecademy'] + div > button:hover {
+a[href^='https://community.codecademy'] + div > button:hover
+{
   background-color: var(--color-text-highlight) !important;
   filter: brightness(1.2);
 }
