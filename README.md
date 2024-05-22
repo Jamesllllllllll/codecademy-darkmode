@@ -12,6 +12,20 @@ It is a Chrome Browser Extension containing custom CSS that changes the appearan
 
 I like to learn at night!
 
+## How to use this in your browser
+
+1. Clone the repository to your local drive
+2. Open Chrome and visit [chrome://extensions/](chrome://extensions/)
+3. Click "Load Unpacked" 
+4. Select the folder containing the cloned files
+5. Visit [Codecademy.com](https://codecademy.com) to confirm it is working!
+
+You may unintstall the extension by visiting [chrome://extensions/](chrome://extensions/), find the extension and click the "Remove" button.
+
+## Modify for your own use
+
+You can modify your copy of `styles.css`. After making changes, remember to click the reload ↻ button on the [chrome://extensions/](chrome://extensions/) page.
+
 ## Contributing
 
 Contributions are welcome! This is a very early version, so there are lots of kinks to be ironed out. Please open an issue if you want to discuss any changes or request fixes. Feel free to open a PR.
