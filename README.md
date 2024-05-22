@@ -14,7 +14,13 @@ I like to learn at night!
 
 ## How to use this in your browser
 
-1. Clone the repository to your local drive
+### Option 1: Install from the Chrome Web Store:
+
+The current release is available here: https://chromewebstore.google.com/detail/ohlfgacenaijhkaikejikkhgnipofpnh
+
+### Option 2: Install from this repo:
+
+1. Clone this repository to your local drive
 2. Open Chrome and visit [chrome://extensions/](chrome://extensions/)
 3. Click "Load Unpacked" 
 4. Select the folder containing the cloned files
