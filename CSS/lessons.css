@@ -65,7 +65,9 @@ button[class*='accordionButton'] > span > div {
   color: var(--color-text-light) !important;
 }
 
-div[class*='StyledAccordionBody'] > div {
+
+/* below also applies to Catalog pages */
+div[data-testid='narrative-content'] div[class*='StyledAccordionBody'] > div {
   background-color: var(--color-background-dark) !important;
   color: var(--color-text-light) !important;
 }

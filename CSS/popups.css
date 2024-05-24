@@ -10,7 +10,7 @@ div[class*='ToastContainer'] * {
 
 /* weekly target letters that represent the days */
 div#target-week > div > div > div + div {
-  color: var(--color-text-dark) !important;
+  color: var(--color-text-light) !important;
 }
 
 /* check marks, overrides the above */

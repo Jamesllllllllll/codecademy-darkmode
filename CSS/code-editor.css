@@ -1,0 +1,31 @@
+.cursor {
+  color: #80a4c2 !important;
+}
+
+/* Blank space */
+
+.mtk1 {
+  color: #d6deeb;
+}
+
+/* Foreground */
+
+/* Quoted Strings */
+
+div[class*='codeEditorWrapper'] {
+  background-color: #011627;
+}
+.mtk8 {
+  color: #ecc48dff !important;
+}
+
+/* parenthesis, symbols */
+.mtk4 {
+  color: #82aaff !important;
+}
+
+/* Functions, etc */
+
+.mtk12 {
+  color: #c792ea !important;
+}

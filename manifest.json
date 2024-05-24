@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Codecademy Dark Mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A dark mode skin for the Codecademy learning platform",
   "author": "James Keezer",
   "content_scripts": [
@@ -11,26 +11,29 @@
         "*://discuss.codecademy.com/*",
         "*://*.codecademy.com/resources/blog/*"
       ],
+      "js": ["./JS/add-classes.js"],
       "css": [
-        "account.css",
-        "achievements.css",
-        "articles.css",
-        "careercenter.css",
-        "catalog.css",
-        "cheatsheets.css",
-        "dropdowns.css",
-        "enrolledcourses.css",
-        "forteams.css",
-        "globals.css",
-        "header.css",
-        "home.css",
-        "lessons.css",
-        "my-learning.css",
-        "popups.css",
-        "profile.css",
-        "projects-workspaces.css",
-        "quizzes.css"
-      ]
+        "./CSS/account.css",
+        "./CSS/achievements.css",
+        "./CSS/articles.css",
+        "./CSS/career-center.css",
+        "./CSS/catalog.css",
+        "./CSS/cheatsheets.css",
+        "./CSS/code-editor.css",
+        "./CSS/dropdowns.css",
+        "./CSS/enrolled-courses.css",
+        "./CSS/for-teams.css",
+        "./CSS/globals.css",
+        "./CSS/header.css",
+        "./CSS/home.css",
+        "./CSS/lessons.css",
+        "./CSS/my-learning.css",
+        "./CSS/popups.css",
+        "./CSS/profile.css",
+        "./CSS/projects-workspaces.css",
+        "./CSS/quizzes.css"
+      ],
+      "run_at": "document_idle"
     }
   ]
 }

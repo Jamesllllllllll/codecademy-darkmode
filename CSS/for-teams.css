@@ -1,5 +1,11 @@
 /* For Teams page */
 
+div:has(> div#businessHero),
+div:has(> div#Features),
+div:has(> div#Resources) {
+  background-color: var(--color-background-dark) !important;
+}
+
 /* Table */
 
 div[data-testid='page-business-plans-gridt'] table tr:nth-of-type(2n) {

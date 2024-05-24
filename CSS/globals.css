@@ -14,15 +14,17 @@ div[class*='VariableProvider'] {
   --color-background-correct: #d45500;
   --color-border-superdark: #000;
 
+  --color-background: #100b22 !important;
   --color-hyper: #26dfa1 !important;
   --color-white: #100b22 !important;
   --color-yellow: #082447 !important;
   --color-paleYellow: #1e3b56 !important;
-  --color-palePink: #411e56 !important;
-  --color-paleBlue: #561e38 !important;
+  --color-palePink: #070608 !important;
+  --color-paleBlue: #230163 !important;
   --color-black: #ebe9f1 !important;
   --color-text: #ebe9f1 !important;
   --color-primary: hsl(160, 74%, 51%) !important;
+  --color-primary-hover: hsl(160, 74%, 51%) !important;
   --color-secondary: hsl(160, 85%, 45%) !important;
   --color-beige: #100b22 !important;
   --color-background: #100b22 !important;
@@ -132,4 +134,8 @@ div[class*='componentGrid']
 
 button > span + svg > mask + g > rect {
   color: var(--color-text-light) !important;
+}
+
+footer {
+  backdrop-filter: brightness(50%) blur(1px);
 }

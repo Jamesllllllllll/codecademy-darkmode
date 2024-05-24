@@ -27,3 +27,8 @@ div[aria-label='subjects and languages'] > div > ul > li > div > a > div > div {
 div:has(> div > h2 + ul > li > a[href^='/courses']) {
   background-color: transparent;
 }
+
+/* Classes for course card headers, applied with jS in add-classes.js */
+.freeCourse {
+  background-color: var(--color-palePink) !important;
+}
