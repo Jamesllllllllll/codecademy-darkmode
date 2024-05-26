@@ -1,0 +1,103 @@
+/* Front page */
+
+small {
+  color: var(--color-text-light) !important;
+}
+
+main[data-testid='homepage-container'] ul[aria-label*='choices'] > li {
+  background-color: var(--color-background-dark) !important;
+}
+
+main[data-testid='homepage-container']
+  ul[aria-label*='choices']
+  > li
+  > button:hover {
+  background-color: var(--color-background-dark) !important;
+  filter: brightness(1.2);
+}
+
+main[data-testid='homepage-container'] a[data-testid='browse-catalog-link'] {
+  color: var(--color-text-dark) !important;
+}
+
+main[data-testid='homepage-container']
+  div[data-testid='desktop-numbered-navigator']
+  ul
+  > li
+  > div {
+  color: var(--color-text-light) !important;
+}
+
+main[data-testid='homepage-container']
+  div[data-testid='desktop-numbered-navigator']
+  ul
+  > li
+  > div[aria-current='true'] {
+  border-color: var(--color-text-light) !important;
+}
+
+div:has(+ div > div > img[src*='Confetti']) > svg {
+  background-color: var(--color-background-dark) !important;
+}
+
+img[src*='Confetti']
+  + div
+  > div
+  > h2
+  + h3
+  + ul
+  + h3
+  + ul
+  > li
+  > svg
+  > mask
+  + g
+  > rect {
+  fill: white !important;
+}
+
+form[data-testid='registration-form'] button {
+  color: var(--color-text-dark) !important;
+}
+
+form[data-testid='registration-form'] button:hover {
+  color: var(--color-text-dark) !important;
+}
+
+form input:-internal-autofill-previewed {
+  background-color: var(--color-background-dark) !important;
+  color: var(--color-text-light) !important;
+}
+
+a[href='/register'] {
+  color: var(--color-text-dark) !important;
+}
+
+a[href='/register']:hover {
+  color: var(--color-text-dark) !important;
+}
+
+main > div + div + div + div + div + div + div + div {
+  background-color: transparent !important;
+}
+
+/* Weird way to select, but just so it won't override same link in header */
+svg:has(+ h2 + p + a) + h2 + p + a[href='/business'] {
+  color: var(--color-text-dark) !important;
+}
+
+svg:has(+ h2 + p + a) + h2 + p + a[href='/business']:hover {
+  color: var(--color-text-dark) !important;
+}
+
+svg[data-testid='desktop-gs-hyperpattern'] {
+  color: var(--color-paleYellow) !important;
+}
+
+div[data-reach-tabs] + div > a[href='/catalog'] {
+  color: var(--color-text-dark) !important;
+}
+
+div[data-reach-tabs] + div > a[href='/catalog']:hover {
+  color: var(--color-text-dark) !important;
+}

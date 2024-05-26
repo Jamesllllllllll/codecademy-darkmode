@@ -11,3 +11,12 @@ nav[aria-label='Mobile Navigation'] {
   background-color: transparent;
   backdrop-filter: blur(10px);
 }
+
+a[data-testid='header-sign-up'] {
+  color: var(--color-text-dark) !important;
+}
+
+a[data-testid='header-sign-up']:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
+}

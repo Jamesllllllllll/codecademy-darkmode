@@ -32,6 +32,13 @@ div[role='dialog'] div:has(> li) {
 
 span[role='tooltip'] + div > div + div > div {
   color: var(--color-text-dark) !important;
+  background-color: var(--color-background-light) !important;
+}
+
+span[role='tooltip'] + div > div + div > div::after {
+  background-image: none !important;
+  background-color: var(--color-background-light) !important;
+  border-color: var(--color-text-highlight) !important;
 }
 
 div[class*='PopoverContainer'] button:hover {

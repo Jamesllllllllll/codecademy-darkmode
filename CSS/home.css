@@ -68,7 +68,7 @@ a[data-testid='variant-curriculum-card']:hover > div {
 }
 
 a[data-testid='variant-curriculum-card'] > div > div {
-  background-color: var(--color-background-dark) !important;
+  /* background-color: var(--color-background-dark) !important; */
   color: var(--color-text-light) !important;
 }
 

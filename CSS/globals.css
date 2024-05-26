@@ -2,7 +2,8 @@
 div[class*='PortalWrapper'],
 div[class*='VariableProvider'] {
   --color-background-dark: #100b22;
-  --color-background-lessDark: #2b1e56;
+  --color-background-lessDark: #271d48;
+  --color-background-light: #ebe9f1;
   --color-text-light: #ebe9f1;
   --color-text-dark: #100b22;
   --color-text-highlight: hsl(160, 74%, 51%);
@@ -18,9 +19,10 @@ div[class*='VariableProvider'] {
   --color-hyper: #26dfa1 !important;
   --color-white: #100b22 !important;
   --color-yellow: #082447 !important;
-  --color-paleYellow: #1e3b56 !important;
-  --color-palePink: #070608 !important;
+  --color-paleYellow: #325947 !important;
+  --color-palePink: #5B1B43 !important;
   --color-paleBlue: #230163 !important;
+  --color-paleNavy: #1f2d47;
   --color-black: #ebe9f1 !important;
   --color-text: #ebe9f1 !important;
   --color-primary: hsl(160, 74%, 51%) !important;
@@ -88,8 +90,8 @@ div[class*='-CardWrapper']:not([data-testid='keep-learning-card']) {
 /* mobile view */
 
 div[role='tablist'] button[aria-selected='true'] {
-  background-color: var(--color-gradient-end) !important;
-  color: var(--color-text-dark) !important;
+  background-color: var(--color-background-lessDark) !important;
+  color: var(--color-text-light) !important;
 }
 
 div[class*='componentGrid'] > h1 + div > div > div > div > div > div {

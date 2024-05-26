@@ -28,7 +28,40 @@ div:has(> div > h2 + ul > li > a[href^='/courses']) {
   background-color: transparent;
 }
 
-/* Classes for course card headers, applied with jS in add-classes.js */
-.freeCourse {
+/* Classes for course card headers, applied with JS in add-classes.js */
+/* The classes get added to the accordion elements in /learn?page=learning, so adding 2 specific selectors */
+div > a > div > div.freeCourse,
+a[data-testid='variant-curriculum-card'] > div > div.freeCourse,
+div > a > div > div.completedFreeCourse,
+a[data-testid='variant-curriculum-card'] > div > div.completedFreeCourse {
   background-color: var(--color-palePink) !important;
+}
+
+div > a > div > div.regularCourse,
+a[data-testid='variant-curriculum-card'] > div > div.regularCourse,
+div > a > div > div.completedRegularCourse,
+a[data-testid='variant-curriculum-card'] > div > div.completedRegularCourse {
+  background-color: var(--color-paleYellow) !important;
+}
+
+div > a > div > div.skillPath,
+a[data-testid='variant-curriculum-card'] > div > div.skillPath,
+div > a > div > div.completedSkillPath,
+a[data-testid='variant-curriculum-card'] > div > div.completedSkillPath {
+  background-color: var(--color-paleBlue) !important;
+}
+
+a[data-testid='variant-curriculum-card'] > div > div.careerPath,
+div > a > div > div.completedCareerPath,
+a[data-testid='variant-curriculum-card'] > div > div.completedCareerPath {
+  background-color: var(--color-paleNavy) !important;
+}
+
+div > a > div > div.completedFreeCourse,
+div > a > div > div.completedSkillPath,
+div > a > div > div.completedCareerPath,
+a[data-testid='variant-curriculum-card'] > div > div.completedFreeCourse,
+a[data-testid='variant-curriculum-card'] > div > div.completedSkillPath,
+a[data-testid='variant-curriculum-card'] > div > div.completedCareerPath {
+  filter: brightness(1.2);
 }

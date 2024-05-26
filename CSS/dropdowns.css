@@ -48,7 +48,6 @@ div:has(+ div > a[href='/explore/sorting-quiz']) > div > svg > path {
   stroke: var(--color-text-highlight) !important;
 }
 
-
 /* 'Explore All Courses' button in Catalog dropdown */
 
 a[data-focusablecatalog='true'][href='/catalog'] {
@@ -69,6 +68,15 @@ div[aria-label='My Notifications'] p {
 
 div[aria-label*='notifications'] h1 {
   color: var(--color-text-light) !important;
+}
+
+div[aria-label*='notifications'] a:hover {
+  background-color: var(--color-background-dark) !important;
+}
+
+/* This is an img element with an svg, so not modifying the color, fill or stroke directly */
+div[aria-label*='notifications'] a > div > img {
+  filter: grayscale(1) invert(1);
 }
 
 div[aria-label*='notifications'] button {

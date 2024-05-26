@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Codecademy Dark Mode",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "A dark mode skin for the Codecademy learning platform",
   "author": "James Keezer",
   "content_scripts": [
@@ -31,7 +31,8 @@
         "./CSS/popups.css",
         "./CSS/profile.css",
         "./CSS/projects-workspaces.css",
-        "./CSS/quizzes.css"
+        "./CSS/quizzes.css",
+        "./CSS/signed-out.css"
       ],
       "run_at": "document_idle"
     }
