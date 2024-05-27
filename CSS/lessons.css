@@ -155,9 +155,8 @@ section[aria-label='Syllabus Browser'] svg {
   color: var(--color-gradient-end) !important;
 }
 
-section[aria-label='Syllabus Browser'] > ul > li > div > button > div > span,
-section[aria-label='Syllabus Browser'] > ul > li > div > button > div + div > span,
-section[aria-label='Syllabus Browser'] > ul > li > div > button + div > ul > li > div > a > div + p {
+section[aria-label='Syllabus Browser'] span,
+section[aria-label='Syllabus Browser'] a > div + p {
   color: var(--color-text-light) !important;
 }
 

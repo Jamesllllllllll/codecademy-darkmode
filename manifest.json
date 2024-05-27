@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Codecademy Dark Mode",
-  "version": "1.0.12",
+  "version": "1.0.121",
   "description": "A dark mode skin for the Codecademy learning platform. Updated May 27, 2024.",
   "author": "James Keezer",
   "action": {
