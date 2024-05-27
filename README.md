@@ -20,8 +20,8 @@ Chrome: https://chromewebstore.google.com/detail/ohlfgacenaijhkaikejikkhgnipofpn
 
 Firefox: https://addons.mozilla.org/en-CA/firefox/addon/codecademy-dark-mode/
 
-> **Note**
-You must grant the add-on permission by clicking the settings icon in the Extensions menu and choose "Always allow on www.codecademy.com".
+> [!Note]
+> You must grant the add-on permission by clicking the settings icon in the Extensions menu and choose "Always allow on www.codecademy.com".
 
 ### Option 2: Install from this repo:
 
