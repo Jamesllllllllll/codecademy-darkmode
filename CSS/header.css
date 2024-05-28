@@ -6,6 +6,11 @@ li[aria-labelledby='Resources menu'] {
   background-color: var(--color-background-dark) !important;
 }
 
+/* Notifications badge (# of notifications) */
+ul[role='menubar'] > li + li > span + div + div {
+  background-color: var(--color-palePink) !important;
+}
+
 nav[aria-label='Main Navigation'],
 nav[aria-label='Mobile Navigation'] {
   background-color: transparent;
