@@ -24,13 +24,12 @@ div[data-testid='progress-bar-bar'] {
 }
 
 /* resume button */
-
-div[data-testid='keep-learning-card'] > div + div + div > a + div + a {
+div[data-testid='keep-learning-card'] a:has(> div > svg) {
   background-color: var(--color-gradient-end) !important;
   color: var(--color-text-dark) !important;
 }
 
-div[data-testid='keep-learning-card'] > div + div + div > a + div + a:hover {
+div[data-testid='keep-learning-card'] a:has(> div > svg):hover {
   filter: brightness(1.2);
 }
 

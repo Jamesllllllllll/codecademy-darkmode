@@ -39,7 +39,8 @@ You may unintstall the extension by visiting [chrome://extensions/](chrome://ext
 
 1. Clone this repository to your local drive
 2. Locate the `manifest.json` file and add the following:
-```json
+
+```js
 {
   "manifest_version": 3,
   
@@ -47,12 +48,13 @@ You may unintstall the extension by visiting [chrome://extensions/](chrome://ext
    "browser_specific_settings": {
     "gecko": {
       "id": "any_random_id",
-      "strict_min_version": "42.0"
+      "strict_min_version": "109.0"
     }
   }
   // rest of the file  
 }
 ```
+
 3. Open Firefox and visit [about:debugging](about:debugging)
 4. Click "This Firefox" (or "This Nightly" if you use the Nightly build)
 5. Click the "Load Temporary Add-on..." button
