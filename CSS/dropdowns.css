@@ -88,6 +88,16 @@ div[aria-label*='notifications'] button:hover {
   filter: brightness(1.2);
 }
 
+div[aria-label*='notifications'] li > div:has(> a:hover),
+div[aria-label*='notifications'] li:has(> div > a:hover) {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div[aria-label*='notifications'] li > div > a:hover,
+div[aria-label*='notifications'] li > div > a:hover::before {
+  background: transparent !important;
+}
+
 span[id^='NotificationItem'],
 span[id^='NotificationItem'] + span {
   color: var(--color-text-light) !important;

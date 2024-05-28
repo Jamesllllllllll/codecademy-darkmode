@@ -65,7 +65,6 @@ button[class*='accordionButton'] > span > div {
   color: var(--color-text-light) !important;
 }
 
-
 /* below also applies to Catalog pages */
 div[data-testid='narrative-content'] div[class*='StyledAccordionBody'] > div {
   background-color: var(--color-background-dark) !important;
@@ -153,6 +152,30 @@ a[data-testid='syllabus-link']:active {
 
 section[aria-label='Syllabus Browser'] svg {
   color: var(--color-gradient-end) !important;
+}
+
+section[aria-label='Syllabus Browser'] span,
+section[aria-label='Syllabus Browser'] a > div + p {
+  color: var(--color-text-light) !important;
+}
+
+/* Overrides --color-white */
+p[data-testid='syllabus-browser-exercise-title'] {
+  color: var(--color-text-light) !important;
+}
+
+/* Adds "disabled" appearance, spans are added for accessibility for lessons not available due to course progress */
+p[data-testid='syllabus-browser-exercise-title'] > span {
+  width: 100%;
+  height: auto !important;
+  left: 0px !important;
+  background-color: var(--color-background-dark);
+  filter: opacity(0.5);
+  color: transparent !important;
+}
+
+div:has(> p[data-testid='syllabus-browser-exercise-title'] > span):hover {
+  background-color: transparent !important;
 }
 
 /* error messages */
