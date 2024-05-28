@@ -44,3 +44,18 @@ span[role='tooltip'] + div > div + div > div::after {
 div[class*='PopoverContainer'] button:hover {
   color: var(--color-text-highlight) !important;
 }
+
+/* Popup for "It looks like you haven't started this lesson yet" */
+
+h2[aria-live="assertive"] + div + div[data-testid="modal-content"] > div > span + div > button > span {
+  color: var(--color-text-light) !important;
+}
+
+h2[aria-live="assertive"] + div + div[data-testid="modal-content"] > div > span + div > button + button {
+  color: var(--color-text-dark) !important;
+}
+
+h2[aria-live="assertive"] + div + div[data-testid="modal-content"] > div > span + div > button + button:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2;)
+}
