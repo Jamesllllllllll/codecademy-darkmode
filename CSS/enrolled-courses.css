@@ -64,11 +64,11 @@ a[href^='/courses'] span + div > svg {
   color: var(--color-text-dark) !important;
 }
 
-div[data-testid='syllabus-provider'] h1 + div > a {
+div[data-testid='syllabus-provider'] h1 + div > a:not([data-testid="practice-link"]) {
   color: var(--color-text-dark) !important;
 }
 
-div[data-testid='syllabus-provider'] h1 + div > a:hover {
+div[data-testid='syllabus-provider'] h1 + div > a:not([data-testid="practice-link"]):hover {
   background-color: var(--color-text-highlight) !important;
   filter: brightness(1.2);
 }
