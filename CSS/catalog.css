@@ -28,32 +28,57 @@ div:has(> div > h2 + ul > li > a[href^='/courses']) {
   background-color: transparent;
 }
 
+/* Single path's syllabus list numbers - this either needs to be super-specific or overwrite --color-navy to be a lighter contrasting colour */
+main > div + div + div + div > div > div + ul > li > div > div[class*='FlexBox'] {
+  background-color: var(--color-hyper) !important;
+}
+
+/* Resume Learning button */
+div:has(> h1) + div > a[aria-label*='Resume'] {
+  color: var(--color-text-dark) !important;
+}
+
+/* Where you left off section */
+
+div[data-testid='where-you-left-off-section'] {
+  background-color: var(--color-background-dark) !important;
+}
+
 /* Classes for course card headers, applied with JS in add-classes.js */
-/* The classes get added to the accordion elements in /learn?page=learning, so adding 2 specific selectors */
+/* The classes get added to the accordion elements in /learn?page=learning, so adding 3 specific selectors */
+h3 + ul > li > a > div > div.freeCourse, /* /learn/paths/{path} */
 div > a > div > div.freeCourse,
 a[data-testid='variant-curriculum-card'] > div > div.freeCourse,
+h3 + ul > li > a > div > div.completedFreeCourse,
 div > a > div > div.completedFreeCourse,
 a[data-testid='variant-curriculum-card'] > div > div.completedFreeCourse {
   background-color: var(--color-palePink) !important;
 }
 
+h3 + ul > li > a > div > div.regularCourse,
 div > a > div > div.regularCourse,
 a[data-testid='variant-curriculum-card'] > div > div.regularCourse,
+h3 + ul > li > a > div > div.completedRegularCourse,
 div > a > div > div.completedRegularCourse,
 a[data-testid='variant-curriculum-card'] > div > div.completedRegularCourse {
   background-color: var(--color-paleYellow) !important;
 }
 
+h3 + ul > li > a > div > div.skillPath,
 div > a > div > div.skillPath,
 a[data-testid='variant-curriculum-card'] > div > div.skillPath,
+h3 + ul > li > a > div > div.completedSkillPath,
 div > a > div > div.completedSkillPath,
 a[data-testid='variant-curriculum-card'] > div > div.completedSkillPath {
   background-color: var(--color-paleBlue) !important;
 }
 
+h3 + ul > li > a > div > div.careerPath,
 a[data-testid='variant-curriculum-card'] > div > div.careerPath,
-div > a > div > div.completedCareerPath,
-a[data-testid='variant-curriculum-card'] > div > div.completedCareerPath {
+div > a > div > div.careerPath,
+h3 + ul > li > a > div > div.completedCareerPath,
+a[data-testid='variant-curriculum-card'] > div > div.completedCareerPath,
+div > a > div > div.completedCareerPath {
   background-color: var(--color-paleNavy) !important;
 }
 

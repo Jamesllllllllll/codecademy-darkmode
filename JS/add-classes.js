@@ -55,7 +55,7 @@ function applyStyles() {
 }
 
 function init() {
-  // Check if we are on the homepage
+  // Check if we are on pages that include Curriculum Cards
   if (
     window.location.pathname === '/' ||
     window.location.pathname.startsWith('/catalog') ||
