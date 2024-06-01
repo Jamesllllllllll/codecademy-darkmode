@@ -1,5 +1,11 @@
 /* Projects & Workspaces pages */
 
+/* Project Kanban list background */
+
+main > div[data-testid="skip-to-content-target"] + div > h1 + div > div + div > div > div[data-testid="skip-to-content-target"] + h2 + span + div > div > div {
+  background-color: var(--color-background-lessDark) !important;
+}
+
 /* Left menu, desktop */
 div:has(> nav > div + div[data-testid='desktop-menu']) {
   background: none !important;

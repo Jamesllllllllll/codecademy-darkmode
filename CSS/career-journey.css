@@ -1,0 +1,5 @@
+/* example: /career-journey/full-stack-engineer */
+
+div[aria-label='Current Track'] > div > div > span + div + div > div + div > a {
+  color: var(--color-text-dark) !important;
+}
