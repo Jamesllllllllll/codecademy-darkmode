@@ -1,8 +1,8 @@
-/* tooltips - removed due to conflicts, fixed with revised global variables */
-/* div[class*='PopoverContainer'],
-div[class*='PopoverContainer'] * {
+/* tooltips in lessons only (with data-testid='platform page') */
+body:has(div[data-testid='platform-page']) div[class*='PopoverContainer'],
+body:has(div[data-testid='platform-page']) div[class*='PopoverContainer'] * {
   color: var(--color-text-dark) !important;
-} */
+}
 
 /* term popup */
 
