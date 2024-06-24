@@ -65,8 +65,16 @@ button[class*='accordionButton'] > span > div {
   color: var(--color-text-light) !important;
 }
 
-section[aria-labelledby='learning-component-NarrativeandInstructions'] div[data-testid='narrative-content'] img {
+section[aria-labelledby='learning-component-NarrativeandInstructions']
+  div[data-testid='narrative-content']
+  img {
   background-color: var(--color-background-light) !important;
+}
+
+section[aria-labelledby='learning-component-NarrativeandInstructions']
+  div[data-testid='narrative-content']
+  h3 {
+  color: var(--color-text-light) !important;
 }
 
 /* below also applies to Catalog pages */
@@ -186,4 +194,19 @@ div:has(> p[data-testid='syllabus-browser-exercise-title'] > span):hover {
 
 div:has(> div[role='alert']) {
   background-color: var(--color-background-dark) !important;
+}
+
+/* Web browser iFrame */
+
+div:has(> iframe[title='Codecademy Web Browser']) {
+  background-color: var(--color-background-medium) !important;
+}
+
+/* Web browser toolbar */
+div[data-testid='web-browser'] > div > div:first-child {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[data-testid='web-browser'] > div > div:first-child input {
+  border-color: var(--color-text-light) !important;
 }

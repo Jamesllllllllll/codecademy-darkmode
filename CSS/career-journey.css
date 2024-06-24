@@ -2,4 +2,16 @@
 
 div[aria-label='Current Track'] > div > div > span + div + div > div + div > a {
   color: var(--color-text-dark) !important;
+  background-color: var(--color-gradient-end) !important;
+}
+
+/* "Go to next track" button */
+
+main > div + div > div + div > div > h2 + div > div + a {
+  color: var(--color-text-dark) !important;
+}
+
+main > div + div > div + div > div > h2 + div > div + a:hover {
+  color: var(--color-text-dark) !important;
+  filter: brightness(1.2);
 }

@@ -3,6 +3,7 @@ div[class*='PortalWrapper'],
 div[class*='VariableProvider'] {
   --color-background-dark: #100b22;
   --color-background-lessDark: #271d48;
+  --color-background-medium: #a69dc4;
   --color-background-light: #ebe9f1;
   --color-text-light: #ebe9f1;
   --color-text-dark: #100b22;
