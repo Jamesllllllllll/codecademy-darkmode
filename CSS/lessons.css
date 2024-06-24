@@ -4,6 +4,22 @@ body:has(div[data-testid='platform-page']) div[class*='PopoverContainer'] * {
   color: var(--color-text-dark) !important;
 }
 
+/* Tooltips for terms in lesson instructions, often linking to Codecademy Docs */
+body:has(div[data-testid='platform-page'])
+  div[class*='PopoverContainer']:has(> div + div > svg)
+  > div
+  > div
+  + div
+  > span,
+body:has(div[data-testid='platform-page'])
+  div[class*='PopoverContainer']:has(> div + div > svg)
+  > div
+  > div
+  + div
+  > p {
+  color: var(--color-text-light) !important;
+}
+
 /* term popup */
 
 div:has(> div > div > div > div[data-testid='popover-beak']) {
