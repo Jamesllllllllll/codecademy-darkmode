@@ -80,3 +80,9 @@ a[data-testid='variant-curriculum-card'] + div:hover {
 ul > li > a > div[class*='DynamicCardWrapper'] {
   border-color: var(--color-border-light) !important;
 }
+
+/* Free accounts: Try Plus or Pro below left nav bar */
+
+nav + div > div:has(> h2 + span) + a, nav + div > div:has(> h2 + span) + a:hover {
+  color: var(--color-paleYellow) !important
+}

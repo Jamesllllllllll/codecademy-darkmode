@@ -29,6 +29,7 @@ div[class*='VariableProvider'] {
   --color-primary: hsl(160, 74%, 51%) !important;
   --color-primary-hover: hsl(160, 74%, 51%) !important;
   --color-secondary: hsl(160, 85%, 45%) !important;
+  --color-secondary-hover: hsl(160, 83%, 49%) !important;
   --color-beige: #100b22 !important;
   --color-background: #100b22 !important;
   --color-interface: #26dfa1 !important;

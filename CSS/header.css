@@ -29,3 +29,7 @@ a[data-testid='header-sign-up']:hover {
 a[aria-label='Codecademy Home'] > svg {
   color: var(--color-text-light) !important;
 }
+
+ul[aria-label='Main Navigation'] > li > a[data-testid='upgrade-link'] {
+  color: var(--color-text-dark) !important;
+}
