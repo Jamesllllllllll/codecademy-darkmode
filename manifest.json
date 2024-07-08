@@ -49,11 +49,5 @@
       ],
       "run_at": "document_idle"
     }
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "james@jameskeezer.dev",
-      "strict_min_version": "109.0"
-    }
-  }
+  ]
 }

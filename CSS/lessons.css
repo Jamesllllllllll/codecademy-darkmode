@@ -2,6 +2,7 @@
 body:has(div[data-testid='platform-page']) div[class*='PopoverContainer'],
 body:has(div[data-testid='platform-page']) div[class*='PopoverContainer'] * {
   color: var(--color-text-dark) !important;
+  background-color: var(--color-background-light) !important;
 }
 
 /* Tooltips for terms in lesson instructions, often linking to Codecademy Docs */

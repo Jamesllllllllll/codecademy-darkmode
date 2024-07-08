@@ -8,6 +8,7 @@ div[class*='VariableProvider'] {
   --color-text-light: #ebe9f1;
   --color-text-dark: #100b22;
   --color-text-highlight: hsl(160, 74%, 51%);
+  --color-text-accent: #ebe9f1;
   --color-border-light: #e9e6e1;
   --color-gradient-start: rgb(165, 46, 224);
   --color-gradient-end: #26dfa1;
