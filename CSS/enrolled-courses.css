@@ -72,3 +72,15 @@ div[data-testid='syllabus-provider'] h1 + div > a:not([data-testid="practice-lin
   background-color: var(--color-text-highlight) !important;
   filter: brightness(1.2);
 }
+
+div[class*='FooterContainer'] span[class*='StyledText'] {
+  color: var(--color-text-light) !important;
+}
+
+div[class*='FooterContainer'] a[href*='courses'], div[class*='FooterContainer'] a[href*='courses']:hover {
+  color: var(--color-text-dark) !important;
+}
+
+div[class*='HorizontalFooter'] span {
+  color: var(--color-text-light) !important;
+}

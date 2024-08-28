@@ -47,6 +47,7 @@ div[data-testid='where-you-left-off-section'] {
 /* Classes for course card headers, applied with JS in add-classes.js */
 /* The classes get added to the accordion elements in /learn?page=learning, so adding 3 specific selectors */
 h3 + ul > li > a > div > div.freeCourse, /* /learn/paths/{path} */
+li > a > div > div.freeCourse,
 div > a > div > div.freeCourse,
 a[data-testid='variant-curriculum-card'] > div > div.freeCourse,
 h3 + ul > li > a > div > div.completedFreeCourse,
@@ -56,6 +57,7 @@ a[data-testid='variant-curriculum-card'] > div > div.completedFreeCourse {
 }
 
 h3 + ul > li > a > div > div.regularCourse,
+li > a > div > div.regularCourse,
 div > a > div > div.regularCourse,
 a[data-testid='variant-curriculum-card'] > div > div.regularCourse,
 h3 + ul > li > a > div > div.completedRegularCourse,
@@ -65,6 +67,7 @@ a[data-testid='variant-curriculum-card'] > div > div.completedRegularCourse {
 }
 
 h3 + ul > li > a > div > div.skillPath,
+li > a > div > div.skillPath,
 div > a > div > div.skillPath,
 a[data-testid='variant-curriculum-card'] > div > div.skillPath,
 h3 + ul > li > a > div > div.completedSkillPath,
@@ -74,6 +77,7 @@ a[data-testid='variant-curriculum-card'] > div > div.completedSkillPath {
 }
 
 h3 + ul > li > a > div > div.careerPath,
+li > a > div > div.careerPath,
 a[data-testid='variant-curriculum-card'] > div > div.careerPath,
 div > a > div > div.careerPath,
 h3 + ul > li > a > div > div.completedCareerPath,

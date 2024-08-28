@@ -11,3 +11,7 @@ footer a[href^='/smart-practice']:hover {
   background-color: var(--color-text-highlight);
   filter: brightness(1.2);
 }
+
+div:has(+ div > div > button[data-testid='quiz-button-cta']) span {
+  color: var(--color-text-light) !important;
+}

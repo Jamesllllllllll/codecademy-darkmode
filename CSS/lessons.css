@@ -21,6 +21,8 @@ body:has(div[data-testid='platform-page'])
   color: var(--color-text-light) !important;
 }
 
+/* Trying to target the same 
+
 /* term popup */
 
 div:has(> div > div > div > div[data-testid='popover-beak']) {
@@ -226,4 +228,18 @@ div[data-testid='web-browser'] > div > div:first-child {
 
 div[data-testid='web-browser'] > div > div:first-child input {
   border-color: var(--color-text-light) !important;
+}
+
+div[data-tesid='popover-content-container'] > div {
+  background-color: var(--color-background-dark) !important;
+}
+
+div[aria-label='Tooltip'] > span,
+div[aria-label='Tooltip'] > p {
+  color: var(--color-text-dark) !important;
+}
+
+/* Lesson Review */
+div[data-testid='review-cards'] div[role='heading'] p {
+  color: var(--color-text-light) !important
 }

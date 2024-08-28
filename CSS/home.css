@@ -86,3 +86,9 @@ ul > li > a > div[class*='DynamicCardWrapper'] {
 nav + div > div:has(> h2 + span) + a, nav + div > div:has(> h2 + span) + a:hover {
   color: var(--color-paleYellow) !important
 }
+
+/* XP Experience bars */
+
+div[data-testid="background-experience-bar"], div[data-testid="foreground-progress-bar"]  {
+  background-image: linear-gradient(249deg, rgb(165, 46, 224) 0%, rgb(38, 223, 161) 100%) !important;
+}

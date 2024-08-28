@@ -21,12 +21,13 @@ div[class*='VariableProvider'] {
   --color-hyper: #26dfa1 !important;
   --color-white: #100b22 !important;
   --color-yellow: #140b35 !important;
-  --color-paleYellow: #325947 !important;
-  --color-palePink: #5B1B43 !important;
+  --color-paleYellow: #024e34 !important;
+  --color-palePink: #4c084c !important;
   --color-paleBlue: #230163 !important;
   --color-paleNavy: #1f2d47;
   --color-black: #ebe9f1 !important;
   --color-text: #ebe9f1 !important;
+  --color-text-secondary: #ded7f4 !important;
   --color-primary: hsl(160, 74%, 51%) !important;
   --color-primary-hover: hsl(160, 74%, 51%) !important;
   --color-secondary: hsl(160, 85%, 45%) !important;

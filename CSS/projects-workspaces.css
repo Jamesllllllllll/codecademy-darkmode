@@ -57,3 +57,9 @@ input[data-testid='sandbox-name-input'] {
 a[aria-label='my_directory'] {
   border: none !important;
 }
+
+/* Project checkboxes */
+
+div[aria-checked='false'][data-testid*='task'] {
+  background-color: var(--color-background-lessDark)
+}

@@ -16,12 +16,16 @@ ul[data-testid='content-card-grid'] > li > a > div > div + span:after {
 /* Single cheatsheet page */
 
 section:has(> div > div.noGridPrint) {
-  background-color: var(--color-background-dark) !important;
+  background-color: transparent !important;
 }
 
 nav:has(> div[aria-label='toggle-nav-menu']),
 ul#content-modules-list > li > div {
   background-color: var(--color-background-lessDark) !important;
+}
+
+ul#content-modules-list {
+  background-color: var(--color-background-dark) !important;
 }
 
 div[data-testid='bottom-section'] + section > h2 + div {
@@ -35,4 +39,14 @@ div[data-testid='bottom-section'] + section > h2 + div > div > a > div {
 div[data-testid='bottom-section'] + section > h2 + div > div > a > div > div {
   background-color: var(--color-background-dark) !important;
   border: none !important;
+}
+
+/* codeblocks */
+span.token.plain,
+span.token.builtin {
+  color: var(--color-text-light) !important;
+}
+
+span.token.string {
+  color: var(--color-text-highlight) !important;
 }

@@ -1,0 +1,7 @@
+div#course-landing-page-heading + div + div + div ul {
+  background-color: var(--color-background-lessDark) !important;
+}
+
+div#course-landing-page-heading + div + div + div ul li {
+  border-color: var(--color-text-highlight) !important;
+}
