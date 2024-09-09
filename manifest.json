@@ -46,7 +46,8 @@
         "./CSS/profile.css",
         "./CSS/projects-workspaces.css",
         "./CSS/quizzes.css",
-        "./CSS/signed-out.css"
+        "./CSS/signed-out.css",
+        "./CSS/syllabus.css"
       ],
       "run_at": "document_idle"
     }
