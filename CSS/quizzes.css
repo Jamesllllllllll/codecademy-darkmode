@@ -15,3 +15,13 @@ footer a[href^='/smart-practice']:hover {
 div:has(+ div > div > button[data-testid='quiz-button-cta']) span {
   color: var(--color-text-light) !important;
 }
+
+div[class*="answerFeedback"][data-testid*="feedback"] {
+  background-color: transparent !important;
+}
+
+/* Div containing a pattern on quiz complete page is overlapping the "continue" button */
+
+div[class*="FlexBox"]:has(pattern[id^="DotLoose"]) {
+  z-index: 0;
+}

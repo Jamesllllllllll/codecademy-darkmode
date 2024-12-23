@@ -243,3 +243,8 @@ div[aria-label='Tooltip'] > p {
 div[data-testid='review-cards'] div[role='heading'] p {
   color: var(--color-text-light) !important
 }
+
+/* Skill Area XP */
+div[data-testid="module-detail-view"] ul li:has(> span) {
+  background-color: var(--color-background-lessDark)
+}

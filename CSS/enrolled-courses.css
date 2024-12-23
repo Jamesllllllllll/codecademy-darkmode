@@ -55,7 +55,7 @@ div[data-testid='syllabus-provider'] div:has(> svg > mask > g > rect) {
 
 /* accordion svgs */
 
-a[href^='/courses'] span + div {
+a[href^='/courses'] span + div:has(> svg) {
   background-color: var(--color-text-highlight) !important;
   border-color: var(--color-text-highlight) !important;
 }

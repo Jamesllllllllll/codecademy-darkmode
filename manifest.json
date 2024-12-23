@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Codecademy Dark Mode",
-  "version": "1.0.130",
-  "description": "A dark mode skin for the Codecademy learning platform. Updated August 28, 2024.",
+  "version": "1.0.132",
+  "description": "A dark mode skin for the Codecademy learning platform. Updated December 23, 2024.",
   "author": "James Keezer",
   "action": {
     "default_icon": {
@@ -51,5 +51,11 @@
       ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "james@jameskeezer.dev",
+      "strict_min_version": "109.0"
+    }
+  }
 }
